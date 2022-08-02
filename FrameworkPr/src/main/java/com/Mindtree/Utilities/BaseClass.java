@@ -16,7 +16,7 @@ public	static WebDriver driver ;
 	public WebDriver initializeDriver() throws IOException
 	{
 		
-		FileInputStream fis= new FileInputStream("C:\\Users\\M1089266\\eclipse-workspace\\FrameworkPr\\property files\\configure.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"./propertyFiles./configure.properties");
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
 		String url = prop.getProperty("url");

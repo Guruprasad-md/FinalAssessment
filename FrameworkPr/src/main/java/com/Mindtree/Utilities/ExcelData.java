@@ -11,7 +11,7 @@ public class ExcelData {
 	
 	public ExcelData()
 	{
-		File read = new File ("C:\\Users\\M1089266\\eclipse-workspace\\FrameworkPr\\excel files\\ExcelData.xlsx");
+		File read = new File (System.getProperty("user.dir")+"./excelFiles./ExcelData.xlsx");
 		try
 		{
 			FileInputStream fis = new FileInputStream(read);
